@@ -10,6 +10,7 @@ import Foundation
 
 class AppState: ObservableObject {
     @Published var speed: Double = 0
+    @Published var unitOfSpeed: UnitOfSpeed = .mps
 
     private init() {}
 

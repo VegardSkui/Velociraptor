@@ -14,6 +14,7 @@
 		5B97B033248846750056BB69 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B97B032248846750056BB69 /* Preview Assets.xcassets */; };
 		5B97B036248846750056BB69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B97B034248846750056BB69 /* LaunchScreen.storyboard */; };
 		5BA62489248B989400BE0E08 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA62488248B989400BE0E08 /* AppState.swift */; };
+		5BA6248D248B9A9700BE0E08 /* UnitOfSpeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA6248C248B9A9700BE0E08 /* UnitOfSpeed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		5B97B037248846750056BB69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B97B03D248846A50056BB69 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5BA62488248B989400BE0E08 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		5BA6248C248B9A9700BE0E08 /* UnitOfSpeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitOfSpeed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				5B97B02B248846730056BB69 /* SceneDelegate.swift */,
 				5B97B02D248846730056BB69 /* ContentView.swift */,
 				5BA62488248B989400BE0E08 /* AppState.swift */,
+				5BA6248C248B9A9700BE0E08 /* UnitOfSpeed.swift */,
 				5B97B02F248846750056BB69 /* Assets.xcassets */,
 				5B97B034248846750056BB69 /* LaunchScreen.storyboard */,
 				5B97B037248846750056BB69 /* Info.plist */,
@@ -154,6 +157,7 @@
 				5B97B02A248846730056BB69 /* AppDelegate.swift in Sources */,
 				5B97B02C248846730056BB69 /* SceneDelegate.swift in Sources */,
 				5B97B02E248846730056BB69 /* ContentView.swift in Sources */,
+				5BA6248D248B9A9700BE0E08 /* UnitOfSpeed.swift in Sources */,
 				5BA62489248B989400BE0E08 /* AppState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

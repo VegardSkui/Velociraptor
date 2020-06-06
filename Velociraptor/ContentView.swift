@@ -11,11 +11,22 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var model: AppState
 
+    var convertedSpeed: Double {
+        switch model.unitOfSpeed {
+            case .mps:
+                return model.speed
+            case .kmh:
+                return model.speed * 3.6
+        }
+    }
+
     var body: some View {
         VStack {
-            Text(String(format: "%.1f", model.speed))
+            Text(String(format: "%.1f", convertedSpeed))
                 .font(.largeTitle)
-            Text("mps")
+            Text(model.unitOfSpeed.description)
+        }.onTapGesture {
+            self.model.unitOfSpeed.next()
         }
     }
 }
