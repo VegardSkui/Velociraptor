@@ -9,6 +9,7 @@
 import CoreLocation
 
 class LocationManager: NSObject, ObservableObject {
+    @Published var hasAuthorization: Bool = true
     @Published var location: CLLocation = CLLocation()
 
     private let locationManager = CLLocationManager()
@@ -17,7 +18,6 @@ class LocationManager: NSObject, ObservableObject {
         super.init()
 
         locationManager.delegate = self
-        locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
     }
 }
@@ -25,6 +25,12 @@ class LocationManager: NSObject, ObservableObject {
 extension LocationManager: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         print("Location authorization status changed, new status: \(status.rawValue)")
+
+        hasAuthorization = status == .authorizedWhenInUse
+
+        if status == .notDetermined {
+            locationManager.requestWhenInUseAuthorization()
+        }
     }
 
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
