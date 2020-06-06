@@ -23,9 +23,9 @@ extension UnitOfSpeed: CustomStringConvertible {
     fileprivate var valueAsString: String {
         switch self {
             case .mps:
-                return "mps"
+                return "m/s"
             case .kmh:
-                return "kmh"
+                return "km/h"
         }
     }
 
