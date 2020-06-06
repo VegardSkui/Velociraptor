@@ -9,13 +9,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var model: AppState
+
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            Text(String(format: "%.1f", model.speed))
+                .font(.largeTitle)
+            Text("mps")
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(AppState.shared)
     }
 }
