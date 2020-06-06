@@ -9,6 +9,7 @@
 enum UnitOfSpeed {
     case mps
     case kmh
+    case kn
 }
 
 extension UnitOfSpeed: CaseIterable {
@@ -26,6 +27,8 @@ extension UnitOfSpeed: CustomStringConvertible {
                 return "m/s"
             case .kmh:
                 return "km/h"
+            case .kn:
+                return "knots"
         }
     }
 

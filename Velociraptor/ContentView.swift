@@ -17,6 +17,8 @@ struct ContentView: View {
                 return model.speed
             case .kmh:
                 return model.speed * 3.6
+            case .kn:
+                return model.speed * 3.6 / 1.852
         }
     }
 
