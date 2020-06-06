@@ -9,28 +9,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var model: AppState
-
-    var convertedSpeed: Double {
-        switch model.unitOfSpeed {
-            case .mps:
-                return model.speed
-            case .kmh:
-                return model.speed * 3.6
-            case .mph:
-                return model.speed / 0.44704
-            case .kn:
-                return model.speed * 3.6 / 1.852
-        }
-    }
+    @EnvironmentObject var appState: AppState
+    @EnvironmentObject var locationManager: LocationManager
 
     var body: some View {
         VStack {
-            Text(String(format: "%.1f", convertedSpeed))
+            Text(String(format: "%.1f", appState.unitOfSpeed.convert(speed: locationManager.location.speed)))
                 .font(.largeTitle)
-            Text(model.unitOfSpeed.symbol)
+            Text(appState.unitOfSpeed.symbol)
         }.onTapGesture {
-            self.model.unitOfSpeed.next()
+            self.appState.unitOfSpeed.next()
         }
     }
 }
@@ -38,6 +26,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .environmentObject(AppState.shared)
+            .environmentObject(AppState())
+            .environmentObject(LocationManager())
     }
 }

@@ -6,6 +6,8 @@
 //  Copyright © 2020 Vegard Skui. All rights reserved.
 //
 
+import CoreLocation
+
 enum UnitOfSpeed {
     case mps
     case kmh
@@ -24,6 +26,19 @@ extension UnitOfSpeed {
                 return "mph"
             case .kn:
                 return "knots"
+        }
+    }
+
+    func convert(speed: CLLocationSpeed) -> Double {
+        switch self {
+            case .mps:
+                return speed
+            case .kmh:
+                return speed * 3.6
+            case .mph:
+                return speed / 0.44704
+            case .kn:
+                return speed * 3.6 / 1.852
         }
     }
 }
