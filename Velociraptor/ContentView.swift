@@ -26,7 +26,7 @@ struct ContentView: View {
         VStack {
             Text(String(format: "%.1f", convertedSpeed))
                 .font(.largeTitle)
-            Text(model.unitOfSpeed.description)
+            Text(model.unitOfSpeed.symbol)
         }.onTapGesture {
             self.model.unitOfSpeed.next()
         }

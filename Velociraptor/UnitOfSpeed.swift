@@ -12,16 +12,8 @@ enum UnitOfSpeed {
     case kn
 }
 
-extension UnitOfSpeed: CaseIterable {
-    mutating func next() {
-        let allCases = Self.allCases
-        let currentIndex = allCases.firstIndex(of: self)!
-        self = allCases[(currentIndex + 1) % allCases.count]
-    }
-}
-
-extension UnitOfSpeed: CustomStringConvertible {
-    fileprivate var valueAsString: String {
+extension UnitOfSpeed {
+    var symbol: String {
         switch self {
             case .mps:
                 return "m/s"
@@ -31,8 +23,12 @@ extension UnitOfSpeed: CustomStringConvertible {
                 return "knots"
         }
     }
+}
 
-    var description: String {
-        return valueAsString
+extension UnitOfSpeed: CaseIterable {
+    mutating func next() {
+        let allCases = Self.allCases
+        let currentIndex = allCases.firstIndex(of: self)!
+        self = allCases[(currentIndex + 1) % allCases.count]
     }
 }
