@@ -9,6 +9,7 @@
 enum UnitOfSpeed {
     case mps
     case kmh
+    case mph
     case kn
 }
 
@@ -19,6 +20,8 @@ extension UnitOfSpeed {
                 return "m/s"
             case .kmh:
                 return "km/h"
+            case .mph:
+                return "mph"
             case .kn:
                 return "knots"
         }
