@@ -23,7 +23,13 @@ struct ContentView: View {
                 self.appState.unitOfSpeed.next()
             }
         } else {
-            Text("The app needs access to your location to determine your current speed")
+            VStack {
+                Text("The app needs access to your location to determine your current speed")
+                Button("Open Settings") {
+                    let url = URL(string: UIApplication.openSettingsURLString)!
+                    UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                }
+            }
         }
     }
 }
