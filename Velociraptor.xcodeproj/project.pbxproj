@@ -16,7 +16,61 @@
 		5B97B036248846750056BB69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B97B034248846750056BB69 /* LaunchScreen.storyboard */; };
 		5BA62489248B989400BE0E08 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA62488248B989400BE0E08 /* AppState.swift */; };
 		5BA6248D248B9A9700BE0E08 /* UnitOfSpeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA6248C248B9A9700BE0E08 /* UnitOfSpeed.swift */; };
+		5BFD8CA5248CF32B008B3740 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BFD8CA3248CF32B008B3740 /* Interface.storyboard */; };
+		5BFD8CA7248CF32D008B3740 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BFD8CA6248CF32D008B3740 /* Assets.xcassets */; };
+		5BFD8CAE248CF32D008B3740 /* VelociraptorWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5BFD8CAD248CF32D008B3740 /* VelociraptorWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5BFD8CB3248CF32D008B3740 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD8CB2248CF32D008B3740 /* ContentView.swift */; };
+		5BFD8CB5248CF32D008B3740 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD8CB4248CF32D008B3740 /* HostingController.swift */; };
+		5BFD8CB7248CF32D008B3740 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD8CB6248CF32D008B3740 /* ExtensionDelegate.swift */; };
+		5BFD8CB9248CF32E008B3740 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BFD8CB8248CF32E008B3740 /* Assets.xcassets */; };
+		5BFD8CBC248CF32E008B3740 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BFD8CBB248CF32E008B3740 /* Preview Assets.xcassets */; };
+		5BFD8CC0248CF32E008B3740 /* VelociraptorWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5BFD8CA1248CF32B008B3740 /* VelociraptorWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5BFD8CFA248CF5DB008B3740 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA62488248B989400BE0E08 /* AppState.swift */; };
+		5BFD8CFB248CF5DB008B3740 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21C41C248C3E4000728622 /* LocationManager.swift */; };
+		5BFD8CFC248CF5DB008B3740 /* UnitOfSpeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA6248C248B9A9700BE0E08 /* UnitOfSpeed.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5BFD8CAF248CF32D008B3740 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B97B01E248846730056BB69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BFD8CAC248CF32D008B3740;
+			remoteInfo = "VelociraptorWatch Extension";
+		};
+		5BFD8CBE248CF32E008B3740 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B97B01E248846730056BB69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BFD8CA0248CF32B008B3740;
+			remoteInfo = VelociraptorWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5BFD8CC1248CF32E008B3740 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				5BFD8CC0248CF32E008B3740 /* VelociraptorWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BFD8CC4248CF32E008B3740 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5BFD8CAE248CF32D008B3740 /* VelociraptorWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5B21C41C248C3E4000728622 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
@@ -31,10 +85,28 @@
 		5B97B03D248846A50056BB69 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5BA62488248B989400BE0E08 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		5BA6248C248B9A9700BE0E08 /* UnitOfSpeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitOfSpeed.swift; sourceTree = "<group>"; };
+		5BFD8CA1248CF32B008B3740 /* VelociraptorWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VelociraptorWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BFD8CA4248CF32B008B3740 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		5BFD8CA6248CF32D008B3740 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5BFD8CA8248CF32D008B3740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BFD8CAD248CF32D008B3740 /* VelociraptorWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "VelociraptorWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BFD8CB2248CF32D008B3740 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5BFD8CB4248CF32D008B3740 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		5BFD8CB6248CF32D008B3740 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		5BFD8CB8248CF32E008B3740 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5BFD8CBB248CF32E008B3740 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5BFD8CBD248CF32E008B3740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5B97B023248846730056BB69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BFD8CAA248CF32D008B3740 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -48,7 +120,10 @@
 			isa = PBXGroup;
 			children = (
 				5B97B03D248846A50056BB69 /* README.md */,
+				5BFD8CF9248CF5C3008B3740 /* Shared */,
 				5B97B028248846730056BB69 /* Velociraptor */,
+				5BFD8CA2248CF32B008B3740 /* VelociraptorWatch */,
+				5BFD8CB1248CF32D008B3740 /* VelociraptorWatch Extension */,
 				5B97B027248846730056BB69 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				5B97B026248846730056BB69 /* Velociraptor.app */,
+				5BFD8CA1248CF32B008B3740 /* VelociraptorWatch.app */,
+				5BFD8CAD248CF32D008B3740 /* VelociraptorWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,9 +144,6 @@
 				5B97B029248846730056BB69 /* AppDelegate.swift */,
 				5B97B02B248846730056BB69 /* SceneDelegate.swift */,
 				5B97B02D248846730056BB69 /* ContentView.swift */,
-				5BA62488248B989400BE0E08 /* AppState.swift */,
-				5B21C41C248C3E4000728622 /* LocationManager.swift */,
-				5BA6248C248B9A9700BE0E08 /* UnitOfSpeed.swift */,
 				5B97B02F248846750056BB69 /* Assets.xcassets */,
 				5B97B034248846750056BB69 /* LaunchScreen.storyboard */,
 				5B97B037248846750056BB69 /* Info.plist */,
@@ -86,6 +160,47 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		5BFD8CA2248CF32B008B3740 /* VelociraptorWatch */ = {
+			isa = PBXGroup;
+			children = (
+				5BFD8CA3248CF32B008B3740 /* Interface.storyboard */,
+				5BFD8CA6248CF32D008B3740 /* Assets.xcassets */,
+				5BFD8CA8248CF32D008B3740 /* Info.plist */,
+			);
+			path = VelociraptorWatch;
+			sourceTree = "<group>";
+		};
+		5BFD8CB1248CF32D008B3740 /* VelociraptorWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5BFD8CB2248CF32D008B3740 /* ContentView.swift */,
+				5BFD8CB4248CF32D008B3740 /* HostingController.swift */,
+				5BFD8CB6248CF32D008B3740 /* ExtensionDelegate.swift */,
+				5BFD8CB8248CF32E008B3740 /* Assets.xcassets */,
+				5BFD8CBD248CF32E008B3740 /* Info.plist */,
+				5BFD8CBA248CF32E008B3740 /* Preview Content */,
+			);
+			path = "VelociraptorWatch Extension";
+			sourceTree = "<group>";
+		};
+		5BFD8CBA248CF32E008B3740 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5BFD8CBB248CF32E008B3740 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5BFD8CF9248CF5C3008B3740 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				5BA62488248B989400BE0E08 /* AppState.swift */,
+				5B21C41C248C3E4000728622 /* LocationManager.swift */,
+				5BA6248C248B9A9700BE0E08 /* UnitOfSpeed.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -96,15 +211,51 @@
 				5B97B022248846730056BB69 /* Sources */,
 				5B97B023248846730056BB69 /* Frameworks */,
 				5B97B024248846730056BB69 /* Resources */,
+				5BFD8CC1248CF32E008B3740 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5BFD8CBF248CF32E008B3740 /* PBXTargetDependency */,
 			);
 			name = Velociraptor;
 			productName = Velociraptor;
 			productReference = 5B97B026248846730056BB69 /* Velociraptor.app */;
 			productType = "com.apple.product-type.application";
+		};
+		5BFD8CA0248CF32B008B3740 /* VelociraptorWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BFD8CC8248CF32E008B3740 /* Build configuration list for PBXNativeTarget "VelociraptorWatch" */;
+			buildPhases = (
+				5BFD8C9F248CF32B008B3740 /* Resources */,
+				5BFD8CC4248CF32E008B3740 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BFD8CB0248CF32D008B3740 /* PBXTargetDependency */,
+			);
+			name = VelociraptorWatch;
+			productName = VelociraptorWatch;
+			productReference = 5BFD8CA1248CF32B008B3740 /* VelociraptorWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		5BFD8CAC248CF32D008B3740 /* VelociraptorWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BFD8CC7248CF32E008B3740 /* Build configuration list for PBXNativeTarget "VelociraptorWatch Extension" */;
+			buildPhases = (
+				5BFD8CA9248CF32D008B3740 /* Sources */,
+				5BFD8CAA248CF32D008B3740 /* Frameworks */,
+				5BFD8CAB248CF32D008B3740 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VelociraptorWatch Extension";
+			productName = "VelociraptorWatch Extension";
+			productReference = 5BFD8CAD248CF32D008B3740 /* VelociraptorWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -117,6 +268,12 @@
 				ORGANIZATIONNAME = "Vegard Skui";
 				TargetAttributes = {
 					5B97B025248846730056BB69 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					5BFD8CA0248CF32B008B3740 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					5BFD8CAC248CF32D008B3740 = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
@@ -135,6 +292,8 @@
 			projectRoot = "";
 			targets = (
 				5B97B025248846730056BB69 /* Velociraptor */,
+				5BFD8CA0248CF32B008B3740 /* VelociraptorWatch */,
+				5BFD8CAC248CF32D008B3740 /* VelociraptorWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -147,6 +306,24 @@
 				5B97B036248846750056BB69 /* LaunchScreen.storyboard in Resources */,
 				5B97B033248846750056BB69 /* Preview Assets.xcassets in Resources */,
 				5B97B030248846750056BB69 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BFD8C9F248CF32B008B3740 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BFD8CA7248CF32D008B3740 /* Assets.xcassets in Resources */,
+				5BFD8CA5248CF32B008B3740 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BFD8CAB248CF32D008B3740 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BFD8CBC248CF32E008B3740 /* Preview Assets.xcassets in Resources */,
+				5BFD8CB9248CF32E008B3740 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +343,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5BFD8CA9248CF32D008B3740 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BFD8CB5248CF32D008B3740 /* HostingController.swift in Sources */,
+				5BFD8CB3248CF32D008B3740 /* ContentView.swift in Sources */,
+				5BFD8CFC248CF5DB008B3740 /* UnitOfSpeed.swift in Sources */,
+				5BFD8CFB248CF5DB008B3740 /* LocationManager.swift in Sources */,
+				5BFD8CB7248CF32D008B3740 /* ExtensionDelegate.swift in Sources */,
+				5BFD8CFA248CF5DB008B3740 /* AppState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5BFD8CB0248CF32D008B3740 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BFD8CAC248CF32D008B3740 /* VelociraptorWatch Extension */;
+			targetProxy = 5BFD8CAF248CF32D008B3740 /* PBXContainerItemProxy */;
+		};
+		5BFD8CBF248CF32E008B3740 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BFD8CA0248CF32B008B3740 /* VelociraptorWatch */;
+			targetProxy = 5BFD8CBE248CF32E008B3740 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5B97B034248846750056BB69 /* LaunchScreen.storyboard */ = {
@@ -175,6 +378,14 @@
 				5B97B035248846750056BB69 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5BFD8CA3248CF32B008B3740 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BFD8CA4248CF32B008B3740 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -334,6 +545,92 @@
 			};
 			name = Release;
 		};
+		5BFD8CC2248CF32E008B3740 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DHBK22HHBU;
+				IBSC_MODULE = VelociraptorWatch_Extension;
+				INFOPLIST_FILE = VelociraptorWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vegardskui.Velociraptor.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		5BFD8CC3248CF32E008B3740 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DHBK22HHBU;
+				IBSC_MODULE = VelociraptorWatch_Extension;
+				INFOPLIST_FILE = VelociraptorWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vegardskui.Velociraptor.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		5BFD8CC5248CF32E008B3740 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"VelociraptorWatch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = DHBK22HHBU;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "VelociraptorWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vegardskui.Velociraptor.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		5BFD8CC6248CF32E008B3740 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"VelociraptorWatch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = DHBK22HHBU;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "VelociraptorWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vegardskui.Velociraptor.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -351,6 +648,24 @@
 			buildConfigurations = (
 				5B97B03B248846750056BB69 /* Debug */,
 				5B97B03C248846750056BB69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BFD8CC7248CF32E008B3740 /* Build configuration list for PBXNativeTarget "VelociraptorWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BFD8CC5248CF32E008B3740 /* Debug */,
+				5BFD8CC6248CF32E008B3740 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BFD8CC8248CF32E008B3740 /* Build configuration list for PBXNativeTarget "VelociraptorWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BFD8CC2248CF32E008B3740 /* Debug */,
+				5BFD8CC3248CF32E008B3740 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
