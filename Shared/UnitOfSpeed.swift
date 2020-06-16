@@ -8,7 +8,7 @@
 
 import CoreLocation
 
-enum UnitOfSpeed {
+enum UnitOfSpeed: String {
     case mps
     case kmh
     case mph
