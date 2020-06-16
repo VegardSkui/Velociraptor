@@ -12,13 +12,13 @@ struct IndicatorView: View {
     @EnvironmentObject var appState: AppState
     @EnvironmentObject var locationManager: LocationManager
 
-    var speed: String {
+    var hasValidSpeed: Bool {
         // A negative speed value indicates an invalid speed
-        if locationManager.location.speed < 0 {
-            return "Searching"
-        }
+        locationManager.location.speed >= 0
+    }
 
-        return String(
+    var speed: String {
+        String(
             format: "%.1f",
             appState.unitOfSpeed.convert(speed: locationManager.location.speed)
         )
@@ -26,12 +26,17 @@ struct IndicatorView: View {
 
     @ViewBuilder
     var body: some View {
-        VStack {
-            Text(speed)
+        if hasValidSpeed {
+            VStack {
+                Text(speed)
+                    .font(.largeTitle)
+                Text(appState.unitOfSpeed.symbol)
+            }.onTapGesture {
+                self.appState.unitOfSpeed.next()
+            }
+        } else {
+            Text("Searching")
                 .font(.largeTitle)
-            Text(appState.unitOfSpeed.symbol)
-        }.onTapGesture {
-            self.appState.unitOfSpeed.next()
         }
     }
 }
