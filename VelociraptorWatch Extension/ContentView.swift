@@ -15,13 +15,7 @@ struct ContentView: View {
     @ViewBuilder
     var body: some View {
         if locationManager.hasAuthorization {
-            VStack {
-                Text(String(format: "%.1f", appState.unitOfSpeed.convert(speed: locationManager.location.speed)))
-                    .font(.largeTitle)
-                Text(appState.unitOfSpeed.symbol)
-            }.onTapGesture {
-                self.appState.unitOfSpeed.next()
-            }
+            IndicatorView()
         } else {
             Text("The app needs access to your location to determine your current speed")
         }

@@ -16,6 +16,8 @@
 		5B97B036248846750056BB69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B97B034248846750056BB69 /* LaunchScreen.storyboard */; };
 		5BA62489248B989400BE0E08 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA62488248B989400BE0E08 /* AppState.swift */; };
 		5BA6248D248B9A9700BE0E08 /* UnitOfSpeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA6248C248B9A9700BE0E08 /* UnitOfSpeed.swift */; };
+		5BD6191E2498CEBC00B85783 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD6191D2498CEBC00B85783 /* IndicatorView.swift */; };
+		5BD619202498CFF500B85783 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD6191D2498CEBC00B85783 /* IndicatorView.swift */; };
 		5BFD8CA5248CF32B008B3740 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BFD8CA3248CF32B008B3740 /* Interface.storyboard */; };
 		5BFD8CA7248CF32D008B3740 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BFD8CA6248CF32D008B3740 /* Assets.xcassets */; };
 		5BFD8CAE248CF32D008B3740 /* VelociraptorWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5BFD8CAD248CF32D008B3740 /* VelociraptorWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -85,6 +87,7 @@
 		5B97B03D248846A50056BB69 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5BA62488248B989400BE0E08 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		5BA6248C248B9A9700BE0E08 /* UnitOfSpeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitOfSpeed.swift; sourceTree = "<group>"; };
+		5BD6191D2498CEBC00B85783 /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
 		5BFD8CA1248CF32B008B3740 /* VelociraptorWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VelociraptorWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BFD8CA4248CF32B008B3740 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		5BFD8CA6248CF32D008B3740 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -197,6 +200,7 @@
 				5BA62488248B989400BE0E08 /* AppState.swift */,
 				5B21C41C248C3E4000728622 /* LocationManager.swift */,
 				5BA6248C248B9A9700BE0E08 /* UnitOfSpeed.swift */,
+				5BD6191D2498CEBC00B85783 /* IndicatorView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -337,6 +341,7 @@
 				5B97B02A248846730056BB69 /* AppDelegate.swift in Sources */,
 				5B97B02C248846730056BB69 /* SceneDelegate.swift in Sources */,
 				5B21C41D248C3E4000728622 /* LocationManager.swift in Sources */,
+				5BD6191E2498CEBC00B85783 /* IndicatorView.swift in Sources */,
 				5B97B02E248846730056BB69 /* ContentView.swift in Sources */,
 				5BA6248D248B9A9700BE0E08 /* UnitOfSpeed.swift in Sources */,
 				5BA62489248B989400BE0E08 /* AppState.swift in Sources */,
@@ -350,6 +355,7 @@
 				5BFD8CB5248CF32D008B3740 /* HostingController.swift in Sources */,
 				5BFD8CB3248CF32D008B3740 /* ContentView.swift in Sources */,
 				5BFD8CFC248CF5DB008B3740 /* UnitOfSpeed.swift in Sources */,
+				5BD619202498CFF500B85783 /* IndicatorView.swift in Sources */,
 				5BFD8CFB248CF5DB008B3740 /* LocationManager.swift in Sources */,
 				5BFD8CB7248CF32D008B3740 /* ExtensionDelegate.swift in Sources */,
 				5BFD8CFA248CF5DB008B3740 /* AppState.swift in Sources */,
