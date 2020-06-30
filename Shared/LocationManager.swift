@@ -9,7 +9,10 @@
 import CoreLocation
 
 class LocationManager: NSObject, ObservableObject {
+    /// Whether the user has given location access or not.
     @Published var hasAuthorization: Bool = true
+
+    /// The most up-to-date location of the device.
     @Published var location: CLLocation = CLLocation()
 
     private let locationManager = CLLocationManager()
