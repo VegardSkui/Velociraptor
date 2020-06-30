@@ -12,13 +12,22 @@ struct NoLocationAccessView: View {
     var body: some View {
         VStack {
             Text("The app needs access to your location to determine your current speed")
+                .padding()
                 .multilineTextAlignment(.center)
-            
-            Button("Open Settings") {
-                let url = URL(string: UIApplication.openSettingsURLString)!
-                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+
+            Button(action: openSettings) {
+                Text("Open Settings")
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
             }
         }
+    }
+
+    private func openSettings() {
+        let url = URL(string: UIApplication.openSettingsURLString)!
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
 }
 
