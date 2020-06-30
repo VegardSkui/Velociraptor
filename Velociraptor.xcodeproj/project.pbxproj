@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5B21C41D248C3E4000728622 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21C41C248C3E4000728622 /* LocationManager.swift */; };
+		5B5454CE24ABB8E700821F32 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5454CD24ABB8E700821F32 /* ActivityIndicator.swift */; };
+		5B5454CF24ABB8E700821F32 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5454CD24ABB8E700821F32 /* ActivityIndicator.swift */; };
 		5B80495324AB7C84007E355B /* SearchingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B80495224AB7C84007E355B /* SearchingView.swift */; };
 		5B80495424AB7CE2007E355B /* SearchingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B80495224AB7C84007E355B /* SearchingView.swift */; };
 		5B80495624AB7DBF007E355B /* SpeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B80495524AB7DBF007E355B /* SpeedView.swift */; };
@@ -82,6 +84,7 @@
 
 /* Begin PBXFileReference section */
 		5B21C41C248C3E4000728622 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		5B5454CD24ABB8E700821F32 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		5B80495224AB7C84007E355B /* SearchingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingView.swift; sourceTree = "<group>"; };
 		5B80495524AB7DBF007E355B /* SpeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedView.swift; sourceTree = "<group>"; };
 		5B80495824AB879D007E355B /* NoLocationAccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoLocationAccessView.swift; sourceTree = "<group>"; };
@@ -213,6 +216,7 @@
 				5B80495524AB7DBF007E355B /* SpeedView.swift */,
 				5B80495224AB7C84007E355B /* SearchingView.swift */,
 				5B80495C24AB885A007E355B /* ContentView.swift */,
+				5B5454CD24ABB8E700821F32 /* ActivityIndicator.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -355,6 +359,7 @@
 				5B97B02A248846730056BB69 /* AppDelegate.swift in Sources */,
 				5B97B02C248846730056BB69 /* SceneDelegate.swift in Sources */,
 				5B21C41D248C3E4000728622 /* LocationManager.swift in Sources */,
+				5B5454CE24ABB8E700821F32 /* ActivityIndicator.swift in Sources */,
 				5BD6191E2498CEBC00B85783 /* IndicatorView.swift in Sources */,
 				5B80495324AB7C84007E355B /* SearchingView.swift in Sources */,
 				5BA6248D248B9A9700BE0E08 /* UnitOfSpeed.swift in Sources */,
@@ -372,6 +377,7 @@
 				5BFD8CB5248CF32D008B3740 /* HostingController.swift in Sources */,
 				5BFD8CFC248CF5DB008B3740 /* UnitOfSpeed.swift in Sources */,
 				5BD619202498CFF500B85783 /* IndicatorView.swift in Sources */,
+				5B5454CF24ABB8E700821F32 /* ActivityIndicator.swift in Sources */,
 				5BFD8CFB248CF5DB008B3740 /* LocationManager.swift in Sources */,
 				5B80495424AB7CE2007E355B /* SearchingView.swift in Sources */,
 				5BFD8CB7248CF32D008B3740 /* ExtensionDelegate.swift in Sources */,

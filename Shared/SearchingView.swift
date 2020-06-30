@@ -10,8 +10,13 @@ import SwiftUI
 
 struct SearchingView: View {
     var body: some View {
-        Text("Searching")
-            .font(.largeTitle)
+        VStack {
+            Text("Searching")
+                .font(.largeTitle)
+
+            ActivityIndicator(isVisible: .constant(true))
+                .frame(width: 40, height: 40)
+        }
     }
 }
 
