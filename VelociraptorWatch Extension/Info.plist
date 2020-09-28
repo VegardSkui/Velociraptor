@@ -32,8 +32,6 @@
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>The app needs access to your location to determine your current speed</string>
-	<key>WKExtensionDelegateClassName</key>
-	<string>$(PRODUCT_MODULE_NAME).ExtensionDelegate</string>
 	<key>WKRunsIndependentlyOfCompanionApp</key>
 	<true/>
 </dict>
